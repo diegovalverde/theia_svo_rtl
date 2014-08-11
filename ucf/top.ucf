@@ -1,0 +1,12 @@
+#constraints for UART test
+
+## Prohibit the automatic placement of pins that are connected to VCC or GND for configuration.
+CONFIG PROHIBIT=P144;
+CONFIG PROHIBIT=P69;
+CONFIG PROHIBIT=P60;
+
+## Locate my signals here
+NET "iGlobalClock" LOC="P94" | IOSTANDARD = LVCMOS25 | PERIOD = 31.25ns ;
+NET "iUartRx" LOC="P101" | IOSTANDARD = LVCMOS25  ;
+NET "oUartTx" LOC="P105" | IOSTANDARD = LVCMOS25 | DRIVE = 4 | SLEW = SLOW ;
+NET "iGlobalReset"     LOC="P121" | IOSTANDARD=LVTTL;  # LogicStart Switch 7

@@ -1,0 +1,1 @@
+stty -F /dev/ttyUSB1 speed 3000000 cs8 -cstopb -parenb
