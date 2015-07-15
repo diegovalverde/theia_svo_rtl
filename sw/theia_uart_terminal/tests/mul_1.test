@@ -1,0 +1,8 @@
+iwrite 0 mul r1 r3 r2
+write r3 0xd2
+write r2 0x104
+c
+stop
+assert r1 0xd548
+
+
