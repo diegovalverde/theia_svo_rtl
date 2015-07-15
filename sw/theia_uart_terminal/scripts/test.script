@@ -1,8 +1,0 @@
-//This is a comment
-
-
-cd gt0
-write r1 0xa
-write r2 0x5
-write r4 0x8
-write r5 0x4

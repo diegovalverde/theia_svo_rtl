@@ -1,0 +1,40 @@
+iwrite 0 mul r2 r4 r1
+write r4 0x9d
+write r1 0x8b
+c
+stop
+assert r2 0x553f
+
+
+iwrite 0 sub r3 r1 r6
+write r1 0x343
+write r6 0x1b3
+c
+stop
+assert r3 0x190
+
+
+iwrite 0 sub r1 r2 r6
+write r2 0x36f
+write r6 0x32c
+c
+stop
+assert r1 0x43
+
+
+iwrite 0 mul r7 r5 r4
+write r5 0x3e1
+write r4 0xb
+c
+stop
+assert r7 0x2aab
+
+
+iwrite 0 sub r5 r1 r7
+write r1 0x209
+write r7 0x1ad
+c
+stop
+assert r5 0x5c
+
+
